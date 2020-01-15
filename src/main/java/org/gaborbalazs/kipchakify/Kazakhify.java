@@ -5,8 +5,8 @@ public class Kazakhify implements Kipchakify {
     @Override
     public String kipchakify(String s) throws KipchakifyException {
         if (s == null || s.length() < 1) {
-            throw new KipchakifyException("Can nüt kipchakify!");
+            throw new KipchakifyException("Cön nöt köpchököfy!");
         }
-        return s.replaceAll("u|o", "ü");
+        return s.replaceAll("[aáeéiíoóőuúüű]", "ö").replaceAll("[AÁEÉIÍOÓŐUÚÜŰ]", "Ö");
     }
 }
