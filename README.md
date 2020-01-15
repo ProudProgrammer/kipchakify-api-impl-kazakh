@@ -1,1 +1,1 @@
-# Kipchakify API Kazakh implementaion
+# Kipchakify API Kazakh implementation
