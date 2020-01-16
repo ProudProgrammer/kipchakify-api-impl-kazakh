@@ -1,6 +1,7 @@
 package org.gaborbalazs.kazakhify;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.gaborbalazs.kipchakify.KipchakifyException;
 import org.junit.jupiter.api.BeforeEach;
@@ -35,6 +36,7 @@ class KazakhifyServiceTest {
         Class expectedException = KipchakifyException.class;
 
         // WHEN
+
         // THEN
         assertThrows(expectedException, () -> underTest.kipchakify(textToKipchakify));
     }
@@ -46,6 +48,7 @@ class KazakhifyServiceTest {
         Class expectedException = KipchakifyException.class;
 
         // WHEN
+
         // THEN
         assertThrows(expectedException, () -> underTest.kipchakify(textToKipchakify));
     }
