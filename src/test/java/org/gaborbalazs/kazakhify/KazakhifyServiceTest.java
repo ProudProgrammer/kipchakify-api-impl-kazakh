@@ -1,17 +1,18 @@
-package org.gaborbalazs.kipchakify;
+package org.gaborbalazs.kazakhify;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.gaborbalazs.kipchakify.KipchakifyException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class KazakhifyTest {
+class KazakhifyServiceTest {
 
-    private Kipchakify underTest;
+    private KazakhifyService underTest;
 
     @BeforeEach
     void setUp() {
-        underTest = new Kazakhify();
+        underTest = new KazakhifyService();
     }
 
     @Test
